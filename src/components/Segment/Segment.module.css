@@ -1,0 +1,41 @@
+.segment {
+  padding: 10px 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  margin: 0 0 10px 10px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.buttonGreen {
+  background-color: rgb(0, 252, 168);
+}
+
+.buttonRed {
+  background-color: rgb(252, 0, 42);
+}

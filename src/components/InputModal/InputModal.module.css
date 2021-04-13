@@ -1,0 +1,39 @@
+.inputModal {
+  position: absolute;
+  width: 500px;
+  height: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(25, 26, 26, 0.74);
+  left: -8px;
+  top: 30%;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.5);
+  transform: translateX(-93%);
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+}
+
+.inputModal.show {
+  transform: translateX(0);
+}
+
+.toggleBtn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 100%;
+  right: 0;
+  background-color: #141414;
+  color: white;
+  float: right;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.toggleBtn:hover {
+  background-color: rgb(12, 12, 12);
+}
