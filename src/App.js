@@ -1,18 +1,23 @@
-import React from "react";
-import Pages from "./components/Pages/Pages";
-import InputModal from "./components/InputModal/InputModa";
+import React, { useState } from "react";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Card from "./components/Card/Card";
+import Journal from "./components/Journal/Journal";
+import MiniYoutube from "./components/MiniYoutube/MiniYoutube";
 import "./App.css";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <React.Fragment>
       <Header />
-      {/* <Card /> */}
-      <InputModal />
-      <Footer />
+      <Switch>
+        <Route path="/journal">
+          <Journal />
+        </Route>
+        <Route path="/miniyoutube">
+          <MiniYoutube />
+        </Route>
+      </Switch>
     </React.Fragment>
   );
 }

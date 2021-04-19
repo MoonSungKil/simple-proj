@@ -1,27 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Input.module.css";
-function Input() {
-  const [text, setText] = useState("");
-  const [content, setContent] = useState([]);
-
-  const submitHandler = (e) => {
-    e.preventDefault();
-    setContent((prevState) => {
-      return [...prevState, { text: text }];
-    });
-    console.log(content);
-  };
-
-  const changeTextHandler = (e) => {
-    setText(e.target.value);
-  };
+function Input(props) {
   return (
     <React.Fragment>
-      <form onSubmit={submitHandler} className={styles.form}>
+      <form onSubmit={props.onSubmit} className={styles.form}>
         <label>Brief Daily Summary</label>
         <textarea
-          onChange={changeTextHandler}
+          onChange={props.onChange}
           type="text"
+          value={props.value}
           placeholder="What you learned today?"
         />
         <button type="submit">Submit</button>

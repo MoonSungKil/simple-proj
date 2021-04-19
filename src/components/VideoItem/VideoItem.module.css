@@ -1,0 +1,24 @@
+.container {
+  width: 350px;
+  background-color: rgb(41, 41, 41);
+  margin: 10px 0;
+  padding: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: rgb(27, 27, 27);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.videoTitle {
+  margin-top: 0;
+  color: rgb(179, 179, 179);
+}
+
+.videoImage img {
+  border: none;
+  border-radius: 10px;
+}

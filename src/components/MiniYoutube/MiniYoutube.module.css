@@ -1,0 +1,12 @@
+.gridLayout {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  width: 80%;
+  margin-left: 10%;
+  grid-gap: 20px;
+}
+
+.firstGrid {
+  grid-column: 1/5;
+}
